@@ -1,0 +1,335 @@
+.header-absolute {
+  z-index: 999;
+  transition: 0.3s all;
+  padding: 8px 0;
+  &.position-change {
+    top: -110px !important;
+  }
+  .transparent-logo {
+    top: 0.5rem;
+  }
+  .navbar-toggler {
+    border: none;
+    margin-left: auto;
+    &:focus {
+      box-shadow: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url('/images/icons/menu-icon.svg');
+    }
+  }
+  .nav-link {
+    color: #fff;
+    margin-right: 30px;
+    position: relative;
+    &:hover {
+      color: $golden-color;
+      &::after,
+      &::before {
+        content: '';
+      }
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
+      width: 60px;
+      margin: 0px auto;
+      height: 1px;
+      background: $golden-color;
+    }
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      width: 44px;
+      height: 5px;
+      margin: 0px auto;
+      border-radius: 5px;
+      background: $golden-color;
+    }
+  }
+}
+.enquiryBtn {
+  background-color: $golden-color !important;
+  color: #fff;
+  font-weight: 500;
+  height: 50px;
+  border: 1px solid $golden-color;
+  &:hover {
+    color: $golden-color !important;
+    background-color: transparent !important;
+    border-color: $golden-color !important;
+  }
+}
+
+.header-sticky {
+  top: 0 !important;
+  padding: 6px 0;
+  transition: 0.3s all;
+  box-shadow: 0px 5px 40px rgb(179 188 195 / 20%) !important;
+  z-index: 999;
+  .navbar-toggler {
+    margin-left: auto;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .header-dropdown-menu {
+    top: 65px !important;
+  }
+  .navbar-brand {
+    position: absolute;
+    top: 6px;
+    outline: 0 !important;
+    .ashapurna-logo {
+      top: -0.5rem !important;
+      height: 120px;
+    }
+    .logo-shadow {
+      box-shadow: 0 0 3px rgb(60 72 88 / 15%);
+    }
+  }
+  .nav-link {
+    color: $light-blue-color;
+    padding: 20px 0;
+    margin-left: 30px;
+    margin-right: 0;
+    position: relative;
+    &:hover {
+      color: $golden-color;
+      &::before {
+        content: '';
+      }
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 5px;
+      width: 60px;
+      margin: 0px auto;
+      height: 1px;
+      background: $golden-color;
+    }
+  }
+
+  .enquiryBtn {
+    margin-top: 10px;
+    height: 50px;
+    border: 1px solid transparent !important;
+    &:hover {
+      background-color: transparent;
+      color: $golden-color !important;
+      border-color: $golden-color !important;
+    }
+  }
+}
+.offcanvas {
+  .offcanvas-header {
+    .btn-close {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .offcanvas-body {
+    padding-top: 0.5rem;
+    a.nav-link {
+      padding: 8px 0 8px 0;
+    }
+    p {
+      a {
+        &:hover {
+          color: $golden-color;
+        }
+      }
+    }
+  }
+  .enquiryBtn {
+    &:focus {
+      background-color: $golden-color;
+    }
+  }
+}
+.header-dropdown {
+  .nav-link {
+    &:hover {
+      &::before,
+      &::after {
+        content: unset;
+        border-color: transparent;
+      }
+    }
+  }
+  .header-dropdown-menu {
+    min-width: 180px;
+    box-shadow: 0px 5px 40px rgb(179 188 195 / 20%);
+    z-index: 99;
+    top: 55px;
+    left: 1.75rem;
+    border-bottom: 2px solid $golden-color;
+    border-top: 2px solid $golden-color;
+    &::before {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 12px solid #be8553;
+      top: -18px;
+      left: 30px;
+      transform: rotate(-90deg);
+      position: absolute;
+      content: '';
+    }
+    ul {
+      li {
+        a {
+          padding: 8px 16px;
+          &:hover {
+            background-color: #f4efeb;
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    .nav-link {
+      color: $golden-color !important;
+    }
+  }
+}
+.header-projects {
+  .nav-link {
+    &:hover {
+      &::after {
+        content: unset !important;
+      }
+    }
+  }
+  .navbar-toggler-icon {
+    background-image: url('/images/icons/menu-icon-black.svg') !important;
+  }
+}
+.mobiledropdown {
+  .accordion-item {
+    border: 0 !important;
+    .accordion-header {
+      border: 0 !important;
+      border-width: 0 !important;
+      .accordion-button {
+        padding: 10px 0;
+        background-color: transparent;
+        border-radius: unset;
+        color: $golden-color;
+        font-weight: 500;
+        border: 0 !important;
+        border-width: 0 !important;
+        &::after {
+          background-image: url('/images/icons/downarrow.png');
+        }
+        &:focus {
+          border-color: transparent;
+          box-shadow: none;
+        }
+      }
+      .collapsed {
+        color: $light-blue-color;
+        border: 0 !important;
+        &::after {
+          background-image: url('/images/icons/down-arrow-black.png');
+        }
+      }
+    }
+    .accordion-collapse {
+      .accordion-body {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+.enquiryBtnWeb {
+  background-color: $golden-color !important;
+  color: #fff;
+  font-weight: 500;
+  height: 45px;
+  padding: 0 !important;
+  border: 1px solid $golden-color;
+  top: 35%;
+  z-index: 999;
+  transform: rotate(-90deg);
+  border-radius: 4px 4px 0 0;
+  right: -83px;
+  width: 120px;
+  transition: right 0.4s;
+  &:hover {
+    color: $golden-color !important;
+    background-color: #ffffff !important;
+    border-color: $golden-color !important;
+  }
+  &.right-appear {
+    right: -40px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header-sticky {
+    .nav-link {
+      margin-right: 10px;
+    }
+  }
+  .header-absolute {
+    .nav-link {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .offcanvas-backdrop {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .social-connect {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $blue-color;
+    a {
+      color: #fff;
+    }
+  }
+  .ashapurna-logo {
+    height: 3.5rem !important;
+  }
+  .header-sticky {
+    .navbar-toggler {
+      border: 0 !important;
+    }
+    .navbar-brand {
+      .ashapurna-logo {
+        height: 4rem !important;
+        top: -10px !important;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ashapurna-logo {
+    height: 5rem !important;
+  }
+  .header-sticky {
+    .navbar-toggler {
+      border: 0 !important;
+    }
+    .navbar-brand {
+      .ashapurna-logo {
+        height: 5rem !important;
+        top: -10px !important;
+      }
+    }
+  }
+}

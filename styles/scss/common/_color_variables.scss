@@ -1,0 +1,32 @@
+$blue-color: #062f43;
+$blue-color-2: #314b58;
+$light-blue-color: #32343b;
+
+$text-color: #5a5a5a;
+
+$golden-color: #be8553;
+$dark-golden-color-1: #d1a782;
+$dark-golden-color: #e8ddd5;
+$light-golden-color: #f4efeb;
+$light-grey: #cccccc;
+$grey-color: #87898e;
+$youtube-color: #f61c0d;
+$container-max-widths: (
+  sm: 540px,
+  md: 991px,
+  lg: 1024px,
+  xl: 1140px,
+  xxl: 1440px,
+);
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1280px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px !important;
+  }
+}

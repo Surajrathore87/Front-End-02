@@ -1,0 +1,31 @@
+.nriCorner-main {
+  padding: 4rem 0 4rem 0 !important;
+  .nricorner-heading {
+    margin-bottom: 4rem;
+  }
+}
+
+.nricorner-right {
+  background: #fff;
+  box-shadow: 0 7.0306px 14.0612px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #d1a782;
+    content: '';
+  }
+}
+@media (max-width: 767px) {
+  .nriCorner-main {
+    padding: 2rem 0 2rem 0 !important;
+    .nricorner-heading {
+      margin-bottom: 0rem;
+    }
+  }
+}

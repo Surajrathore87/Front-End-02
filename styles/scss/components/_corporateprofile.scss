@@ -1,0 +1,140 @@
+.corporateProfile-main {
+  padding: 4rem 0;
+  .corporate-top {
+    margin-bottom: 4rem;
+    p {
+      width: 90%;
+    }
+  }
+  .corporate-heading {
+    margin: 4rem 0;
+    p {
+      width: 60%;
+    }
+  }
+
+  .corporate-left {
+    border: 1px solid $golden-color;
+    border-radius: 6px;
+    background: #ffffff;
+    &:hover {
+      border: 1px solid $golden-color;
+      h3 {
+        color: $golden-color;
+      }
+    }
+    .corporateLeft-blocks {
+      .corporate-icon {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+.corporateProfile-full,
+.corporateProfile-bottom {
+  padding: 4rem 0;
+}
+
+.corporateProfile-full {
+  background: url('/images/bg/mission-vision-bg.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.corporateProfile-bottom {
+  .ourProfile {
+    margin-bottom: 50px;
+    p {
+      width: 80%;
+    }
+  }
+  a {
+    &:hover {
+      color: $golden-color;
+    }
+  }
+  .projects-wrapper {
+    span {
+      img {
+        transform: scale(1);
+        transition: all 500ms ease;
+      }
+    }
+    .projectHeading {
+      h3 {
+        a {
+          color: $light-blue-color;
+        }
+      }
+    }
+    &:hover {
+      span {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .projectHeading {
+        h3 {
+          a {
+            color: $golden-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.outline-button {
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  border: 1px solid $light-blue-color;
+  border-radius: 30px;
+  font-size: 18px;
+  align-items: center;
+  color: $light-blue-color;
+  font-weight: 500;
+  display: flex;
+  background: transparent;
+  margin: 0px auto;
+  transition: all 500ms ease;
+  &:hover {
+    color: #fff;
+    background: $light-blue-color;
+  }
+}
+
+@media (max-width: 1200px) {
+  .corporateProfile-main {
+    .corporate-heading {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .corporateProfile-main {
+    .corporate-top {
+      p {
+        width: 100%;
+      }
+    }
+    .corporate-heading {
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .corporateProfile-bottom {
+    .ourProfile {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}

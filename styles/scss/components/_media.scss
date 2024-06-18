@@ -1,0 +1,217 @@
+.media-section {
+  padding: 100px 0;
+  .media-slider {
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      li {
+        margin: 0 5px !important;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent !important;
+        button {
+          width: 12px !important;
+          height: 12px !important;
+          border-radius: 6px !important;
+          background: $golden-color !important;
+          &::before {
+            content: '' !important;
+          }
+        }
+      }
+      .slick-active {
+        border: 1px solid $golden-color !important;
+        border-radius: 10px;
+      }
+    }
+    .media-slide {
+      .bg-media-image {
+        background-color: $golden-color;
+        z-index: 8;
+        top: 10px;
+        right: 10px;
+        width: 90%;
+        height: 87%;
+      }
+      img {
+        z-index: 9;
+      }
+    }
+  }
+}
+.camps-section {
+  padding: 80px 0;
+  background-color: $light-golden-color;
+  .media-card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    h3 {
+      a {
+        transition: 0.2s all;
+        &:hover {
+          color: $golden-color !important;
+        }
+      }
+    }
+    .media-box-img {
+      border-radius: 8px 0 0 8px;
+      min-width: 300px;
+      min-height: 270px;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+    }
+    .media-btn {
+      font-size: 16px !important;
+    }
+  }
+}
+.event-details-section {
+  padding: 80px 0;
+  .event-detail-box {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  .highlight-box {
+    border-radius: 10px;
+    .media-overlay {
+      z-index: 8;
+      opacity: 0;
+      transition: 0.2s ease-out;
+      background: rgba(255, 255, 255, 0.9);
+      mix-blend-mode: normal;
+      border-radius: 10px;
+    }
+    &:hover {
+      .media-overlay {
+        opacity: 1;
+      }
+    }
+  }
+  .media-next-btn {
+    transition: 0.2s all;
+    &:hover {
+      color: $blue-color !important;
+    }
+  }
+}
+.event-sidebar {
+  h2 {
+    padding-bottom: 12px;
+    &::after {
+      position: absolute;
+      width: 110px;
+      height: 3px;
+      background-color: $golden-color;
+      left: 0;
+      bottom: 0;
+      content: '';
+    }
+  }
+  ul {
+    li {
+      a {
+        transition: 0.2s all;
+        &:hover {
+          color: $golden-color !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .camps-section {
+    .media-card {
+      .media-box-img {
+        min-width: 200px;
+        min-height: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .visibility-hidden {
+    display: none !important;
+  }
+  .media-section {
+    padding: 40px 0;
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 27px;
+    }
+    .media-slider {
+      .media-slide {
+        .bg-media-image {
+          top: 16px;
+          right: 16px;
+          width: 85%;
+          height: 75%;
+        }
+      }
+    }
+  }
+  .camps-section {
+    padding: 40px 0;
+    .media-card {
+      h3 {
+        a {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+      ul {
+        li {
+          font-size: 15px;
+        }
+      }
+      p,
+      .media-btn {
+        font-size: 15px;
+      }
+      p {
+        line-height: 27px;
+      }
+      .media-box-img {
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+  }
+  .event-details-section {
+    padding: 40px 0;
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    h2 {
+      font-size: 23px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    p,
+    li {
+      font-size: 15px;
+      line-height: 27px;
+    }
+    .media-overlay {
+      .button-golden {
+        font-size: 15px;
+      }
+    }
+  }
+  .event-sidebar {
+    h2 {
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,443 @@
+.pb-60 {
+  padding-bottom: 60px;
+}
+.news-letter {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .news-letter-card {
+    .card-inner {
+      cursor: pointer;
+      &:hover {
+      }
+      .card-img-overlay {
+        transition: 1s;
+        border-radius: 20px;
+      }
+    }
+    .read-more {
+      width: max-content;
+      &:hover {
+        color: $blue-color !important;
+      }
+    }
+  }
+}
+
+.visit-btn {
+  width: 100px;
+  height: 40px;
+  background: #be8553;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 5px;
+  &:hover {
+    background: transparent;
+    border-color: #be8553;
+    color: #be8553;
+  }
+}
+
+.data-table {
+  margin-left: 318px;
+  th,
+  td {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+.emi-table {
+  th,
+  td {
+    font-size: 13px;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  ul {
+    li {
+      margin: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      &::marker {
+        font-size: 25px !important;
+        color: $light-blue-color !important;
+      }
+    }
+  }
+}
+
+.share-icons {
+  .share-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0rem 1rem rgb(0 0 0 / 15%) !important;
+    color: #fff;
+    &.facebook {
+      background: #3b5998;
+    }
+    &.whatsapp {
+      background: #25d366;
+    }
+    &.twitter {
+      background: #55acee;
+    }
+  }
+}
+
+.emi-chart-box {
+  canvas {
+    width: 250px !important;
+    height: 250px !important;
+    margin: 0 auto;
+  }
+}
+
+.emi-right-section {
+  h2 {
+    font-size: 40px;
+    font-weight: 500 !important;
+    color: $blue-color;
+    svg {
+      font-size: 52px;
+    }
+  }
+}
+
+.toggle-year-month {
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 58px;
+    border-radius: 4px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    border-radius: 4px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $light-blue-color;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 50px;
+    width: 58px;
+    border-radius: 5px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #be8553;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #be8553;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(64px);
+    -ms-transform: translateX(64px);
+    transform: translateX(64px);
+  }
+}
+.emi-calculate {
+  .outlined-input {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+.referral-scheme-section {
+  .referral-scheme-box {
+    border: 1px solid $golden-color;
+    border-radius: 5px;
+    padding: 15px;
+    .count-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      background: $golden-color;
+    }
+  }
+}
+
+.process-flowchart-box {
+  position: relative;
+  z-index: 5;
+  .flowchart-inner {
+    width: max-content;
+  }
+  &.flowchart-bg {
+    &::after {
+      height: 100px;
+      display: block;
+      width: 1000px;
+      position: absolute;
+      background: url(/images/quick-links/Shape.png) no-repeat;
+      background-size: 100%;
+      content: '';
+      left: 62%;
+      top: 18%;
+      z-index: -1;
+    }
+  }
+}
+
+.referral-register-section {
+  .outlined-input {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+.range-value {
+  background: $light-golden-color !important;
+  color: $dark-golden-color-1;
+  color: $dark-golden-color-1;
+  padding: 5px;
+  width: 140px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input {
+    width: 100%;
+    color: $dark-golden-color-1;
+    outline: unset !important;
+  }
+}
+.range-emi-calculater {
+  input {
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none; // needed again for Chrome & Safari
+      width: 1.1rem;
+      height: 1.1rem;
+      margin: -5px 0 0;
+      border-radius: 50%;
+      background: $dark-golden-color-1 !important;
+      cursor: pointer;
+      border: 0 !important;
+      box-shadow: unset !important;
+    }
+    // Track
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 0.5rem;
+      cursor: pointer;
+      background: $light-golden-color;
+    }
+    &::-ms-track {
+      width: 100%;
+      height: 0.5rem;
+      cursor: pointer;
+      background: $light-golden-color;
+    }
+
+    &:focus {
+      // override outline/background on focus
+      background: none;
+      outline: none;
+    }
+
+    &::-ms-track {
+      // A little somethin' somethin' for IE
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+  }
+}
+.windmills-inner {
+  .teamContent {
+    margin-bottom: 8px;
+    font-size: 13px !important;
+    line-height: 28px !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $blue-color !important;
+  }
+  li {
+    color: $blue-color;
+  }
+  p {
+    color: $text-color;
+  }
+}
+
+@media (max-width: 1450px) {
+  .process-flowchart-box {
+    &.flowchart-bg {
+      &::after {
+        width: 880px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .process-flowchart-box {
+    &.flowchart-bg {
+      &::after {
+        width: 750px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .process-flowchart-box {
+    &.flowchart-bg {
+      &::after {
+        content: unset;
+      }
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+  .news-letter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .news-letter-card {
+      flex-direction: column-reverse;
+      h1,
+      h2 {
+        font-size: 32px;
+      }
+      .news-letter-card {
+        h2 {
+          font-size: 25px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .max-amount {
+    font-size: 14px;
+  }
+  .emi-right-top {
+    h2 {
+      svg {
+        font-size: 28px !important;
+      }
+    }
+  }
+  .news-letter {
+    h1,
+    h2 {
+      font-size: 26px;
+    }
+    .news-letter-card {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 13px !important;
+        line-height: 28px !important;
+        margin-bottom: 8px;
+      }
+    }
+    .card-inner {
+      img {
+        width: 280px !important;
+        height: 280px !important;
+      }
+    }
+
+    .windmills-inner {
+      .teamContent {
+        margin-bottom: 8px;
+        font-size: 13px !important;
+        line-height: 28px !important;
+      }
+      h5 {
+        font-size: 18px !important;
+        color: $blue-color !important;
+      }
+      li {
+        color: $blue-color;
+      }
+      p {
+        color: $text-color;
+      }
+    }
+  }
+  .emi-table {
+    th,
+    td {
+      font-size: 13px;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+    ul {
+      li {
+        margin: 5px;
+        font-size: 16px;
+        & {
+          &::marker {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  }
+  .referral-scheme-section {
+    .referral-scheme-box {
+      font-size: 14px;
+      .count-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        background: $golden-color;
+      }
+    }
+  }
+  .emi-chart-box {
+    canvas {
+      width: 250px !important;
+      height: 250px !important;
+      margin: 0 auto;
+    }
+  }
+}

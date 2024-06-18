@@ -1,0 +1,123 @@
+.careers-section {
+  padding: 80px 0;
+  .career-card {
+    background: #ffffff;
+    box-shadow: 0px 0px 1px rgb(12 26 75 / 24%), 0px 3px 8px -1px rgb(50 50 71 / 5%);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 5px;
+      background: $golden-color;
+    }
+    .skills-list-item {
+      background: $light-golden-color;
+      border-radius: 4px;
+      text-transform: capitalize;
+    }
+    button {
+      transition: 0.2s all;
+      &:hover {
+        border-color: $golden-color !important;
+        color: $golden-color !important;
+        background-color: #ffffff !important;
+      }
+    }
+  }
+}
+.career-bgtext {
+  &::before {
+    position: absolute;
+    content: 'Career';
+    top: -60px;
+    left: 5px;
+    font-size: 7rem;
+    opacity: 0.33;
+    z-index: -1;
+    text-transform: capitalize;
+    -webkit-text-stroke: 1px $golden-color;
+    color: #fff;
+  }
+}
+.career-resume {
+  position: relative;
+  input::file-selector-button {
+    border: 1px solid $golden-color !important;
+    color: $golden-color !important;
+    border-radius: 5px !important;
+    cursor: pointer;
+    padding: 0.5rem 1rem !important;
+    background-color: #ffffff !important;
+  }
+}
+.career-form {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+}
+.career-apply {
+  line-height: unset;
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media (max-width: 991px) {
+  .careers-section {
+    padding: 50px 0;
+    h1 {
+      font-size: 26px;
+    }
+    .mb-25 {
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    .career-card {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+      .skills-list-item,
+      button {
+        font-size: 14px;
+        width: max-content;
+      }
+    }
+  }
+  .career-bgtext {
+    &::before {
+      position: absolute;
+      content: 'Career';
+      top: -20px;
+      left: 5px;
+      font-size: 3rem;
+      opacity: 0.33;
+      z-index: -1;
+      text-transform: capitalize;
+      -webkit-text-stroke: 1px $golden-color;
+      color: #fff;
+    }
+  }
+}

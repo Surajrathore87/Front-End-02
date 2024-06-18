@@ -1,0 +1,1228 @@
+// HomeBanner Css
+.homeBanner-main {
+  margin-top: 76px;
+  .homeBanner-wrapper {
+    min-height: 550px;
+    max-height: 550px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    border-radius: 0 0 7px 7px;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+  }
+  .homeContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    h2 {
+      font-size: 50px;
+      align-self: center;
+      span {
+        font-family: 'Abril Fatface', cursive !important;
+        font-size: 75px;
+      }
+    }
+  }
+  .slick-slider {
+    .slick-prev {
+      left: -4rem !important;
+      z-index: 9;
+      opacity: 1 !important;
+      width: 55px;
+      height: 55px;
+      &::before {
+        content: url('/images/icons/arrow-left-gold.svg');
+        width: 55px;
+        height: 55px;
+        opacity: 1 !important;
+      }
+    }
+    .slick-next {
+      right: -4rem !important;
+      opacity: 1 !important;
+      z-index: 9;
+      width: 55px;
+      height: 55px;
+      &::before {
+        content: url('/images/icons/arrow-right-gold.svg');
+        width: 55px;
+        height: 55px;
+        opacity: 1 !important;
+      }
+    }
+    .slick-slide {
+      height: 100%;
+      div:first-child {
+        height: 100%;
+      }
+    }
+  }
+}
+.homeEnquiry {
+  position: absolute;
+  padding: 0 20px;
+  padding-top: 44px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  left: 0;
+  right: 0;
+  bottom: -10%;
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 20%);
+  border-bottom: 10px solid $golden-color;
+  z-index: 2;
+  .searchForm {
+    input {
+      border: 1px solid #c7c7c7;
+      box-shadow: none;
+      height: 65px;
+      padding: 0.5rem 0.8rem;
+      &::-webkit-input-placeholder {
+        font-size: 16px;
+        color: #000;
+      }
+      &:focus {
+        border: 1px solid $golden-color;
+      }
+    }
+    select {
+      border: 1px solid #c7c7c7;
+      height: 65px;
+      position: relative;
+      box-shadow: none;
+      appearance: none;
+      padding: 0.5rem 0.8rem;
+      background: url('/images/icons/select-arrow.svg') no-repeat;
+      background-position: calc(100% - 10px) calc(1.5em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+      -webkit-appearance: none;
+      &:focus {
+        border: 1px solid $golden-color;
+      }
+    }
+    Button {
+      height: 65px;
+      border: 1px solid $golden-color !important;
+      transition: all 500ms ease;
+      &:hover {
+        color: $golden-color !important;
+        background-color: transparent;
+      }
+    }
+  }
+  .always-promise {
+    padding: 13px 17px 17px 18px;
+    width: 375px;
+    height: 60px;
+    font-size: 20px;
+    line-height: 34px;
+    top: -5.5rem;
+    white-space: nowrap;
+    left: 0;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -44px;
+      border-color: transparent;
+      border-style: solid;
+    }
+    &::before {
+      border-width: 22px;
+      border-left-color: #ccc;
+      border-bottom-color: #ccc;
+    }
+    &::after {
+      border-width: 22px;
+      border-left-color: #bf9570;
+      border-bottom-color: #bf9570;
+    }
+  }
+}
+
+// About Us Css
+.aboutUs-main {
+  padding: 3.5rem 0;
+  .aboutus-right {
+    padding-top: 15%;
+    padding-left: 4%;
+    padding-bottom: 220px;
+    .aboutusContent {
+      text-align: justify;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          list-style: none;
+          margin-bottom: 14px;
+          position: relative;
+          padding-left: 30px;
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background-image: url('/images/icons/circle-right.png');
+          }
+        }
+      }
+    }
+  }
+  .aboutus-features {
+    position: absolute;
+    width: 990px;
+    right: 0;
+    bottom: 0;
+    .features {
+      .featureIcon-wrapper {
+        width: 80px;
+        height: 80px;
+        img {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+// Why Ashapurna Css
+.whyAshapurna-main {
+  background-image: url('/images/banner/whyashapurna-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0;
+  margin-bottom: 250px;
+  .whyAshapurna-left {
+    padding: 100px 0;
+  }
+  .whyAshapurna-right {
+    .whyAshapurnaBlocks-wrapper {
+      position: absolute;
+      .whyashapurna-blocks {
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 10px 0 0;
+        padding: 40px;
+        min-height: 319px;
+        position: relative;
+        background-color: #fff;
+        border-bottom: 7px solid $golden-color;
+        span {
+          img {
+            max-height: 52px;
+          }
+        }
+        .empty-block {
+          width: 28px;
+          height: 82px;
+          background-color: $light-golden-color;
+          right: 0;
+          top: 45px;
+        }
+        &:hover {
+          background-color: $light-blue-color;
+          transition: ease-in-out 0.2s all;
+          cursor: pointer;
+          h3 {
+            color: #fff;
+          }
+          p {
+            color: #fff !important;
+          }
+          .empty-block {
+            background-color: #232427;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Ashapurna Projects Css
+.ashapurnaProjects-main {
+  padding: 4rem 0;
+  background: $light-blue-color;
+  .ashapurnaProjects-slider {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0;
+    .slick-prev {
+      position: absolute;
+      left: -4rem;
+      top: 50%;
+      z-index: 9;
+      width: 55px;
+      height: 55px;
+      &::before {
+        content: url('/images/icons/arrow-left-gold.svg');
+        width: 55px;
+        height: 55px;
+      }
+      &:focus,
+      &:hover {
+        &::before {
+          content: url('/images/icons/arrow-left-white.svg');
+        }
+      }
+    }
+    .slick-next {
+      position: absolute;
+      right: -4rem;
+      top: 50%;
+      z-index: 9;
+      width: 55px;
+      height: 55px;
+      &::before {
+        content: url('/images/icons/arrow-right-gold.svg');
+        width: 55px;
+        height: 55px;
+      }
+      &:focus,
+      &:hover {
+        &::before {
+          content: url('/images/icons/arrow-right-white.svg');
+        }
+      }
+    }
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      li {
+        margin: 0 5px !important;
+        padding: 3px 0 0 3px;
+        button {
+          width: 12px !important;
+          height: 12px !important;
+          border-radius: 6px !important;
+          background: $golden-color !important;
+          &::before {
+            content: '' !important;
+          }
+        }
+      }
+      .slick-active {
+        border: 1px solid $golden-color !important;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.buisness-logo {
+  z-index: 10;
+  height: 50px;
+  top: 1rem;
+  left: 1rem;
+  transition: 0.5s;
+}
+// Ashapurna business Css
+.ashapurnaBusiness-main {
+  background: url('/images/banner/whyashapurna-bg.webp') top center;
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
+  padding: 5rem 0 7rem 0;
+  .ashapurnaTabs {
+    position: absolute;
+    right: 18px;
+    top: -20%;
+    .nav-item {
+      margin: 0 0 0 15px;
+      a {
+        background-color: transparent;
+        color: $light-blue-color;
+        border: 1px solid $light-blue-color;
+        border-radius: 4px;
+        transition: all 500ms ease;
+        &:hover {
+          background-color: $light-blue-color;
+          color: #fff;
+        }
+      }
+      .active {
+        background-color: $light-blue-color;
+        border: 1px solid transparent;
+        color: #fff;
+      }
+    }
+  }
+
+  .tab-content {
+    padding-top: 30px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 276px;
+      height: 273px;
+      right: 1%;
+      bottom: 0;
+      background: url('/images/sections/light-dots-bg.png');
+      z-index: -1;
+    }
+    .slick-slide {
+      margin-bottom: 30px;
+      padding: 10px;
+      overflow: hidden;
+      .busniess-slider-block {
+        display: flex !important;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        img {
+          transition: all 500ms ease;
+          transform: scale(1);
+        }
+        .businessSlider-overlay {
+          width: 80%;
+          height: 80%;
+          top: 10%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          opacity: 0;
+          display: flex;
+          transition: 0.2s ease-out;
+          border: 2px solid $golden-color;
+          background-color: rgba(50, 52, 59, 0.8);
+        }
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+          .businessSlider-overlay {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      li {
+        margin: 0 5px !important;
+        width: 40px !important;
+        height: 10px !important;
+        button {
+          width: 40px !important;
+          height: 10px !important;
+          border-radius: 4px !important;
+          background: #d9d9d9 !important;
+          &::before {
+            content: '' !important;
+          }
+        }
+      }
+      .slick-active {
+        button {
+          background: $golden-color !important;
+        }
+      }
+    }
+  }
+}
+
+// Testimonial Css
+.testimonials-main {
+  padding: 4rem 0;
+  .testimonial-right {
+    margin-bottom: 30px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 276px;
+      height: 273px;
+      background: url('/images/testimonials/bg_dots.png');
+      background-size: cover;
+      right: 1%;
+      top: 8%;
+      z-index: 1;
+    }
+    .slick-slider {
+      z-index: 99;
+      .slick-list {
+        padding-top: 115px;
+        padding-bottom: 20px;
+        .slick-slide {
+          padding: 0 5px;
+          .testimonial-image {
+            width: 203px;
+            height: 203px;
+            margin-top: -12%;
+            border: 8px solid $golden-color;
+            border-radius: 50%;
+            img {
+              border-radius: 50%;
+            }
+            &::before {
+              position: absolute;
+              content: '';
+              width: 228px;
+              height: 228px;
+              border-radius: 50%;
+              background: #fff;
+              opacity: 0.2;
+              top: -1.3em;
+              left: -1.3em;
+            }
+          }
+        }
+      }
+      .slick-dots {
+        text-align: left;
+        display: flex !important;
+        li {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          border-radius: 100%;
+          button {
+            background: $golden-color;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            color: $golden-color;
+            &:before {
+              content: unset;
+            }
+          }
+        }
+        .slick-active {
+          border: 1px solid $golden-color;
+        }
+      }
+    }
+  }
+}
+
+// Project Css
+.projectsMain {
+  padding: 5rem 0 7rem 0;
+  .slick-slide {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    .projects-wrapper {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      border: 1px solid #efefef;
+      .img-media {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        min-height: 250px;
+        max-height: 250px;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+      }
+      .projectIcon-wrapper {
+        .iconLayer-2 {
+          width: 70px;
+          height: 70px;
+          top: 8rem;
+          left: 0;
+          background-color: #fff;
+          border-radius: 100%;
+          right: 0;
+          margin: 0 auto;
+          z-index: 999;
+          &::before,
+          &::after {
+            opacity: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            content: '';
+            height: 100%;
+            width: 100%;
+            border: 8px solid rgba(255, 255, 255, 0.8);
+            border-radius: 100%;
+            animation-name: ripple;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+            z-index: -1;
+          }
+          &:hover {
+            a {
+              color: $youtube-color;
+            }
+          }
+        }
+      }
+      .projectHeading {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          top: -30px;
+          left: 30px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 11.5px 15px 11.5px;
+          border-color: transparent transparent #ffffff transparent;
+        }
+      }
+      a {
+        transition: 0.2s all;
+      }
+      &:hover {
+        a {
+          color: $golden-color !important;
+        }
+      }
+    }
+  }
+  .slick-dots {
+    li {
+      margin: 0 15px !important;
+      button {
+        width: 40px !important;
+        height: 10px !important;
+        border-radius: 4px !important;
+        background: #d9d9d9 !important;
+        margin: 0 5px !important;
+        &::before {
+          content: '' !important;
+        }
+      }
+    }
+    .slick-active {
+      button {
+        background: $golden-color !important;
+      }
+    }
+  }
+}
+
+.instagramMain {
+  padding: 5rem 0;
+  .instagramFeed {
+    ._2R-kh {
+      @extend .row;
+      ._wPDyp {
+        @extend .col-lg-3;
+        margin: 1rem 0;
+        a {
+          display: flex;
+          position: relative;
+          border: 2px solid #be8553;
+          height: 100%;
+          align-items: center;
+          background: #fff;
+          max-height: 257px;
+          min-height: 257px;
+          @extend .p-2;
+        }
+      }
+    }
+  }
+}
+
+// Common Css
+.title-underline {
+  width: 110px;
+  height: 0px;
+  border: 1px solid $golden-color;
+}
+.subtitle {
+  font-size: 15px;
+  &::after {
+    width: 81px;
+    border-top: 1px solid $golden-color;
+    content: '';
+    position: absolute;
+    right: -82px;
+    top: 11px;
+  }
+}
+
+.enquiryModal-modal {
+  .modal-close {
+    opacity: 0.5;
+    transition: 0.2s all;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .enquiryModal-form {
+    .slick-slider,
+    .slick-list,
+    .slick-track,
+    .slick-slide,
+    .slick-slide div {
+      height: 100%;
+    }
+    .enq-slide {
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
+    .slick-dots {
+      display: flex !important;
+      justify-content: center;
+      bottom: 1rem;
+      li {
+        margin: 0 5px !important;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent !important;
+        button {
+          width: 12px !important;
+          height: 12px !important;
+          border-radius: 6px !important;
+          background: $golden-color !important;
+          &::before {
+            content: '' !important;
+          }
+        }
+      }
+      .slick-active {
+        border: 1px solid $golden-color !important;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1550px) {
+  .ashapurnaBusiness-main {
+    .tab-content {
+      &::after {
+        right: -3%;
+      }
+    }
+  }
+
+  .testimonials-main {
+    .testimonial-right {
+      &::after {
+        right: -5%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1141px) and (max-width: 1440px) {
+  .homeBanner-main {
+    .homeContent {
+      h2 {
+        font-size: 42px;
+        span {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+
+  .ashapurnaProjects-main {
+    padding: 6rem 0 4rem 0;
+    .ashapurnaProjects-slider {
+      bottom: -60%;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .homeEnquiry {
+    width: 1024px;
+  }
+  .projectsMain {
+    .slick-slide {
+      .projects-wrapper {
+        .projectIcon-wrapper {
+          .iconLayer-2 {
+            top: 6.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .homeBanner-main {
+    .homeBanner-wrapper {
+      min-height: 450px;
+      max-height: 450px;
+    }
+    .slick-slider {
+      .slick-next,
+      .slick-prev {
+        width: 40px;
+        height: 40px;
+        &::before {
+          width: 40px;
+          height: 40px;
+          opacity: 1 !important;
+        }
+      }
+      .slick-prev {
+        left: -2rem !important;
+      }
+      .slick-next {
+        right: -2rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .testimonials-main,
+  .projectsMain,
+  .instagramMain {
+    padding: 60px 0;
+  }
+  .homeBanner-main {
+    .homeBanner-wrapper {
+      min-height: 450px;
+      max-height: 450px;
+    }
+    .slick-slider {
+      .slick-next,
+      .slick-prev {
+        width: 40px;
+        height: 40px;
+        &::before {
+          width: 40px;
+          height: 40px;
+          opacity: 1 !important;
+        }
+      }
+      .slick-prev {
+        left: 1rem !important;
+      }
+      .slick-next {
+        right: 1rem !important;
+      }
+    }
+    .homeContent {
+      h2 {
+        font-size: 42px;
+        span {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+
+  .ashapurnaNri-main {
+    padding: 245px 0 90px 0;
+  }
+  .ashapurnaProjects-main {
+    .ashapurnaProjects-slider {
+      padding-top: 2.5rem;
+      .slick-prev {
+        left: 0rem;
+        top: 20%;
+      }
+      .slick-next {
+        right: 0rem;
+        top: 15%;
+      }
+    }
+  }
+
+  .ashapurnaBusiness-main {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .homeEnquiry {
+    padding: 0 10px;
+    padding-top: 44px;
+    padding-bottom: 20px;
+    width: 900px;
+    bottom: -20%;
+    .searchForm {
+      input,
+      select,
+      button {
+        height: 43px;
+      }
+      select {
+        background-position: calc(100% - 10px) calc(0.9em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+      }
+      button {
+        display: block !important;
+        width: auto !important;
+        margin: 0 auto;
+        margin-top: 15px;
+      }
+    }
+  }
+  .aboutUs-main {
+    padding: 7rem 0 50px 0 !important;
+  }
+  .projectsMain {
+    .slick-slide {
+      .projects-wrapper {
+        .projectIcon-wrapper {
+          .iconLayer-2 {
+            top: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutUs-main,
+  .whyAshapurna-main,
+  .ashapurnaProjects-main,
+  .ashapurnaBusiness-main,
+  .testimonials-main,
+  .projectsMain,
+  .instagramMain {
+    padding: 4rem 0;
+  }
+
+  .homeBanner-main {
+    .homeBanner-wrapper {
+      min-height: 350px;
+      max-height: 350px;
+    }
+    .homeContent {
+      h2 {
+        font-size: 30px;
+        span {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .aboutUs-main {
+    .aboutus-right {
+      padding-top: 5%;
+      padding-left: 0;
+      margin-bottom: 0;
+      .aboutusContent {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .whyAshapurna-main {
+    margin-bottom: 0;
+    .whyAshapurna-left {
+      padding: 0;
+    }
+    .whyAshapurna-right {
+      .whyAshapurnaBlocks-wrapper {
+        position: relative;
+      }
+    }
+  }
+
+  .ashapurnaProjects-main {
+    .ashapurnaProjects-slider {
+      .slick-slide {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .ashapurnaBusiness-main {
+    margin-bottom: 0;
+    background-size: 100% 460px;
+    .tab-content {
+      padding-top: 40px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homeBanner-main {
+    .homeContent {
+      h2 {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .homeEnquiry {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .fs-40 {
+    font-size: 32px;
+  }
+  .lh-60 {
+    line-height: 45px;
+  }
+
+  .homeBanner-main {
+    margin-top: 50px;
+    border-radius: 0;
+    .home-banner-row {
+      margin: 0 !important;
+    }
+    .homeBanner-wrapper {
+      min-height: 300px;
+      max-height: 300px;
+    }
+    .slick-slider {
+      .slick-next,
+      .slick-prev {
+        width: 35px;
+        height: 35px;
+        &::before {
+          width: 35px;
+          height: 35px;
+          opacity: 1 !important;
+        }
+      }
+      .slick-prev {
+        left: 2rem !important;
+      }
+      .slick-next {
+        right: 2rem !important;
+      }
+    }
+    .homeContent {
+      h2 {
+        font-size: 36px;
+        span {
+          font-size: 42px;
+        }
+      }
+      .enquiryBtnModal {
+        &:hover {
+          background: $golden-color;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .aboutUs-main {
+    .aboutus-left {
+      padding-top: 0;
+    }
+    .aboutus-right {
+      padding-bottom: 0px;
+      margin-bottom: 0;
+    }
+    .aboutus-features {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  .ashapurnaProjects-main {
+    background: linear-gradient(to top, #32343b 0%, #32343b 70%, #fff 70%, #fff 100%);
+  }
+
+  .ashapurnaNri-main {
+    padding: 28% 0 10% 0;
+  }
+
+  .ashapurnaBusiness-main {
+    .ashapurnaTabs {
+      position: relative;
+    }
+    .tab-content {
+      padding-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .fs-40 {
+    font-size: 30px;
+  }
+  .lh-60 {
+    line-height: 45px;
+  }
+
+  // Home Css
+  .homeBanner-main {
+    .homeBanner-wrapper {
+      min-height: 300px;
+      max-height: 300px;
+    }
+    .slick-slider {
+      .slick-next,
+      .slick-prev {
+        width: 35px;
+        height: 35px;
+        &::before {
+          width: 35px;
+          height: 35px;
+          opacity: 1 !important;
+        }
+      }
+      .slick-prev {
+        left: 2rem !important;
+      }
+      .slick-next {
+        right: 2rem !important;
+      }
+    }
+    .homeContent {
+      h2 {
+        font-size: 18px;
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  // About us
+  .aboutUs-main {
+    .aboutus-left {
+      padding-top: 0;
+    }
+    .aboutus-right {
+      padding-bottom: 0px;
+    }
+    .aboutus-features {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      left: 0;
+      span {
+        font-size: 26px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // Why Ashapurna
+  .whyAshapurna-main {
+    margin-bottom: 0;
+    .whyAshapurna-left {
+      padding: 0;
+    }
+    .whyAshapurna-right .whyAshapurnaBlocks-wrapper {
+      position: relative;
+    }
+  }
+
+  // Ashapurna Project
+  .ashapurnaProjects-main {
+    margin-bottom: 0;
+    background: linear-gradient(to top, #32343b 0%, #32343b 80%, #fff 80%, #fff 100%);
+    .ashapurnaProjects-heading {
+      h2 {
+        color: $blue-color !important;
+      }
+    }
+
+    .ashapurnaProjects-slider {
+      margin-top: 2rem;
+      padding: 0;
+      .slick-slide {
+        margin-bottom: 1rem;
+        .ashapaImg {
+          width: 100%;
+        }
+      }
+      .slick-dots {
+        display: flex !important;
+        li {
+          margin: 0 5px !important;
+          padding: 3px 0 0 3px;
+          button {
+            width: 12px !important;
+            height: 12px !important;
+            border-radius: 6px !important;
+            background: $golden-color !important;
+            &::before {
+              content: '' !important;
+            }
+          }
+        }
+        .slick-active {
+          border: 1px solid $golden-color !important;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  // Ashapurna business
+  .ashapurnaBusiness-main {
+    background-size: cover;
+    .ashapurnaTabs {
+      position: relative;
+    }
+    .tab-content {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .ashapurnaNri-main {
+    .ashapurnaNri-right {
+      .facility-blocks {
+        .facilityIcon-content {
+          h4 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  // Testimonials
+  .testimonials-main {
+    padding: 50px 0;
+    .testimonial-right {
+      &::after {
+        display: none;
+      }
+      .slick-slider {
+        .slick-list {
+          padding-top: 60px;
+          .slick-slide {
+            .testimonial-image {
+              border: none;
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+        .slick-dots {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

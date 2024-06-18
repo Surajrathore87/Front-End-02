@@ -1,0 +1,20 @@
+.investJodhpur-main {
+  padding: 4rem 0;
+  .investjodhpur-bottom {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .investJodhpur-main {
+    padding: 4rem 0 2rem 0;
+    .investjodhpur-bottom {
+      margin-top: 2rem;
+    }
+    .investjodhpur-heading{
+      h1,h2 {
+        font-size: 28px !important;
+      }
+    }
+  }
+}
